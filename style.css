@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 
-.grid {
+/* .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(50px, auto);
   grid-gap: 10px;
   grid-column-gap: 1em;
   grid-row-gap: 1em;
-}
+} */
 
 nav {
   /* grid-column: 1/13;
@@ -36,11 +36,13 @@ nav .meny {
 h1 {
   font-family: "Space Mono", monospace;
   font-size: 70px;
+  font-weight: 400;
 }
 
 h2 {
   font-family: "Space Mono", monospace;
   font-size: 40px;
+  font-weight: 400;
 }
 
 p {
@@ -48,7 +50,7 @@ p {
 }
 
 button {
-  background-color: orange;
+  background-color: #ffa944;
   font-family: "Space Mono", monospace;
   border: none;
   padding: 1em;
@@ -61,7 +63,7 @@ header {
   align-items: center;
   justify-content: center;
   background-image: url("nasa.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
@@ -70,9 +72,51 @@ header {
   color: white;
 }
 
+header h1 {
+  margin-bottom: 40px;
+}
+
+header p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.inbetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vh;
+  text-align: center;
+}
+
 .input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   grid-column: 1/13;
   grid-row: 2/4;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+}
+
+.input-container input {
+  width: 300px;
+  margin-right: 50px;
+}
+
+main p {
+  width: 75%;
+  margin-left: 8vw;
+  padding: 10px;
+  margin-top: 2vw;
+  margin-bottom: 10vh;
+}
+
+main h2 {
+  width: 75%;
+  margin-left: 8vw;
+  margin-top: 10vh;
 }
 
 .main-1 {
@@ -94,6 +138,12 @@ header {
 }
 
 footer {
-  grid-column: 1/13;
-  grid-row: 6/7;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  width: 100vw;
+  background-color: #ffa944;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
